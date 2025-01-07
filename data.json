@@ -16,5 +16,9 @@
         "Bootstrap" : 75,
         "C#" : 80,
         "SQL" : 75
-    }
+    },
+    "languages" : [
+        "Turkish",
+        "English"
+    ]
 }
