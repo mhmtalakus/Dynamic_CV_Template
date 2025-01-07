@@ -7,7 +7,7 @@ fetch("./data.json")
         const profile = data.profile;
         const names = `
     <div class="w3-display-bottomleft w3-container w3-text-black">
-        <h2>${profile.firstname} ${profile.lastname}</h2>
+        <h2 style="font-weight: bold;">${profile.firstname} ${profile.lastname}</h2>
     </div>                        
     `;
         namesId.innerHTML += names;
