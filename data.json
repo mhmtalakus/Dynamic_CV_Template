@@ -36,8 +36,14 @@
         }
     ],
     "languages": [
-        "Turkish",
-        "English"
+        {
+            "language": "Turkish",
+            "level": 100
+        },
+        {
+            "language": "English",
+            "level": 25
+        }
     ],
     "work_experiences": [
         {

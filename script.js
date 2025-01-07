@@ -47,3 +47,21 @@ fetch("./data.json")
         });
         skillsElement.innerHTML += skillHTML;
     });
+
+    const languageElement = document.querySelector("#languages");
+    // console.log(languageElement);
+
+    fetch("./data.json")
+    .then(response => response.json())
+    .then(data => {
+        let languageHTML = "";
+        data.languages.forEach(item => {
+            languageHTML += `
+            <p>${item.language}</p>
+            <div class="w3-light-grey w3-round-xlarge">
+                <div class="w3-round-xlarge w3-teal" style="height:24px; width:${item.level}%"></div>
+            </div>
+            `;
+        });
+        languageElement.innerHTML += languageHTML;
+    });
