@@ -8,5 +8,13 @@
             "email" : "mehmetalakus222@gmail.com",
             "phone" : "0123 456 7890"
         }
+    },
+    "skills" : {
+        "HTML" : 95,
+        "CSS" : 85,
+        "JavaScript" : 80,
+        "Bootstrap" : 75,
+        "C#" : 80,
+        "SQL" : 75
     }
 }
