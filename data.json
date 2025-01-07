@@ -1,0 +1,12 @@
+{
+    "profile" : {
+        "firstname" : "Mehmet",
+        "lastname" : "Alakuş",
+        "profession" : "Software Developer",
+        "location" : "Istanbul, TUR",
+        "contacts" : {
+            "email" : "mehmetalakus222@gmail.com",
+            "phone" : "0123 456 7890"
+        }
+    }
+}
