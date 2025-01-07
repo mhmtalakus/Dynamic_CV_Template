@@ -20,5 +20,21 @@
     "languages" : [
         "Turkish",
         "English"
+    ],
+    "work_experiences" : [
+        {
+            "title" : "Full Stack Developer Trainee",
+            "company" : "İstanbul Eğitim Akademi",
+            "startDate" : "May 2024",
+            "endDate" : "Present",
+            "description" : "I improve myself with the training I received in the Full Stack Developer course"
+        },
+        {
+            "title" : "Database Management and Database Analysis (Intern)",
+            "company" : "Tommy Life",
+            "startDate" : "June 2022",
+            "endDate" : "August 2022",
+            "description" : "My job is to database it was to check to get anyone and make updates.This task data transfer using SQL database management and I gained experience with the continuity of currentness"
+        }
     ]
 }
