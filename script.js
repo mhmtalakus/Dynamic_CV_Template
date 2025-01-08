@@ -114,6 +114,12 @@ fetch("./data.json")
 const educationElement = document.querySelector("#educations");
 // console.log(educationElement);
 
+const educationTitle = document.createElement("h2");
+educationTitle.classList.add("w3-text-grey", "w3-padding-16");
+educationTitle.innerHTML = `<i class="fa fa-certificate fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Education`;
+
+educationElement.appendChild(educationTitle);
+
 fetch("./data.json")
     .then(response => response.json())
     .then(data => {
