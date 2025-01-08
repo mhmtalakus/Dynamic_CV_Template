@@ -1,6 +1,13 @@
 const namesId = document.getElementById("name");
 // console.log(namesId)
 
+const imageElement = document.createElement("img");
+imageElement.src = "me.jpg";
+imageElement.style.width = "100%";
+imageElement.alt = "Avatar";
+
+namesId.appendChild(imageElement);
+
 fetch("./data.json")
     .then(response => response.json())
     .then(data => {
