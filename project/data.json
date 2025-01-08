@@ -6,7 +6,7 @@
         "location": "Istanbul, TUR",
         "contacts": {
             "email": "mehmetalakus222@gmail.com",
-            "phone": "0123 456 7890"
+            "phone": "+90 553 886 33 02"
         }
     },
     "skills": [
@@ -73,6 +73,16 @@
             "startDate": "2021",
             "endDate": "2023",
             "degree": "Associate Degree in Computer Programming"
+        }
+    ],
+    "social_accounts": [
+        {
+            "platform": "Linkedin",
+            "icon": "fa fa-linkedin fa-lg"
+        },
+        {
+            "platform" : "Github",
+            "icon" : "fa-brands fa-github fa-lg"
         }
     ]
 }
