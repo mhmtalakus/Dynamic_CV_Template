@@ -88,6 +88,12 @@ fetch("./data.json")
 const workElement = document.querySelector("#works");
 // console.log(workElement);
 
+const workTitle = document.createElement("h2");
+workTitle.classList.add("w3-text-grey", "w3-padding-16");
+workTitle.innerHTML = `<i class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Work Experience`;
+
+workElement.appendChild(workTitle);
+
 fetch("./data.json")
     .then(response => response.json())
     .then(data => {
