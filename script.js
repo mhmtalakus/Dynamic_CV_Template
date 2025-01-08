@@ -39,6 +39,15 @@ fetch("./data.json")
 const skillsElement = document.getElementById("skills");
 // console.log(skillsElement);
 
+{/* <p class="w3-large"><b><i */}
+// class="fa fa-asterisk fa-fw w3-margin-right   w3-text-teal"></i>Skills</b></p>
+
+const skillsTitle = document.createElement("p");
+skillsTitle.classList.add("w3-large");
+skillsTitle.innerHTML = `<b><i class="fa fa-asterisk fa-fw w3-margin-right   w3-text-teal"></i>Skills</b>`;
+
+skillsElement.appendChild(skillsTitle);
+
 fetch("./data.json")
     .then(response => response.json())
     .then(data => {
