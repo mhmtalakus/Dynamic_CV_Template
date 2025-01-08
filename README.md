@@ -2,7 +2,7 @@
 
 A dynamic, interactive CV template designed to showcase professional experience, education, skills, and contact information. This template dynamically pulls data from a JSON file and displays it on the webpage. It includes sections for personal information, work experience, education, skills, languages, and social media links.
 
-##Features
+## Features
 
 - Dynamic rendering of user profile information
 - Interactive skill bars and language proficiency indicators
