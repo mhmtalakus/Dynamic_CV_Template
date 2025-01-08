@@ -63,16 +63,16 @@
     ],
     "educations": [
         {
+            "institution": "Anadolu University",
+            "startDate": "2024",
+            "endDate": "Currently",
+            "degree": "Bachelor Degree in Management Information Systems"
+        },
+        {
             "institution": "Adıyaman University",
             "startDate": "2021",
             "endDate": "2023",
             "degree": "Associate Degree in Computer Programming"
-        },
-        {
-            "institution": "Anadolu University",
-            "startDate": "2024",
-            "endDate": "Present",
-            "degree": "Bachelor Degree in Management Information Systems"
         }
     ]
 }

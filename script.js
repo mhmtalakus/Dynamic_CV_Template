@@ -85,3 +85,23 @@ fetch("./data.json")
             workElement.innerHTML += worksHTML;
         })
     })
+
+const educationElement = document.querySelector("#educations");
+// console.log(educationElement);
+
+fetch("./data.json")
+.then(response => response.json())
+.then(data => {
+    let educationHTML = "";
+    data.educations.forEach((item, index) => {
+        educationHTML = `
+        <div class="w3-container">
+            <h5 class="w3-opacity"><b>${item.institution}</b></h5>
+            <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>${item.startDate} - ${item.endDate}</h6>
+            <p>${item.degree}</p>
+            ${index < data.educations.length - 1 ? '<hr>' : ""}
+        </div>
+        `;
+        educationElement.innerHTML += educationHTML;
+    })
+})
