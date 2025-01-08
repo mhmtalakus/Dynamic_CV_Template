@@ -23,5 +23,5 @@ A dynamic, interactive CV template designed to showcase professional experience,
 ## Technologies Used
 
 - HTML
--CSS
--JavaScript
+- CSS
+- JavaScript
