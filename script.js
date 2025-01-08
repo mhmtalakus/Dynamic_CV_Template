@@ -48,10 +48,10 @@ fetch("./data.json")
         skillsElement.innerHTML += skillHTML;
     });
 
-    const languageElement = document.querySelector("#languages");
-    // console.log(languageElement);
+const languageElement = document.querySelector("#languages");
+// console.log(languageElement);
 
-    fetch("./data.json")
+fetch("./data.json")
     .then(response => response.json())
     .then(data => {
         let languageHTML = "";
@@ -65,3 +65,23 @@ fetch("./data.json")
         });
         languageElement.innerHTML += languageHTML;
     });
+
+const workElement = document.querySelector("#works");
+// console.log(workElement);
+
+fetch("./data.json")
+    .then(response => response.json())
+    .then(data => {
+        let worksHTML = "";
+        data.work_experiences.forEach((item,index) => {
+            worksHTML = `
+            <div class="w3-container">
+                <h5 class="w3-opacity"><b>${item.title} / ${item.company}</b></h5>
+                <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>${item.startDate} - ${item.endDate === "Present" ? `<span class="w3-tag w3-teal w3-round">${item.endDate}<span>` : item.endDate}</h6>
+                <p>${item.description}</p>
+                ${index < data.work_experiences.length - 1 ? '<hr>' : ""}
+                </div>
+            `;
+            workElement.innerHTML += worksHTML;
+        })
+    })
