@@ -39,9 +39,6 @@ fetch("./data.json")
 const skillsElement = document.getElementById("skills");
 // console.log(skillsElement);
 
-{/* <p class="w3-large"><b><i */}
-// class="fa fa-asterisk fa-fw w3-margin-right   w3-text-teal"></i>Skills</b></p>
-
 const skillsTitle = document.createElement("p");
 skillsTitle.classList.add("w3-large");
 skillsTitle.innerHTML = `<b><i class="fa fa-asterisk fa-fw w3-margin-right   w3-text-teal"></i>Skills</b>`;
@@ -67,6 +64,12 @@ fetch("./data.json")
 const languageElement = document.querySelector("#languages");
 // console.log(languageElement);
 
+const languageTitle = document.createElement("p");
+languageTitle.classList.add("w3-large", "w3-text-theme");
+languageTitle.innerHTML = `<b><i class="fa fa-globe fa-fw w3-margin-right w3-text-teal"></i>Languages</b>`;
+
+languageElement.appendChild(languageTitle);
+
 fetch("./data.json")
     .then(response => response.json())
     .then(data => {
@@ -89,7 +92,7 @@ fetch("./data.json")
     .then(response => response.json())
     .then(data => {
         let worksHTML = "";
-        data.work_experiences.forEach((item,index) => {
+        data.work_experiences.forEach((item, index) => {
             worksHTML = `
             <div class="w3-container">
                 <h5 class="w3-opacity"><b>${item.title} / ${item.company}</b></h5>
@@ -106,11 +109,11 @@ const educationElement = document.querySelector("#educations");
 // console.log(educationElement);
 
 fetch("./data.json")
-.then(response => response.json())
-.then(data => {
-    let educationHTML = "";
-    data.educations.forEach((item, index) => {
-        educationHTML = `
+    .then(response => response.json())
+    .then(data => {
+        let educationHTML = "";
+        data.educations.forEach((item, index) => {
+            educationHTML = `
         <div class="w3-container">
             <h5 class="w3-opacity"><b>${item.institution}</b></h5>
             <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>${item.startDate} - ${item.endDate}</h6>
@@ -118,6 +121,6 @@ fetch("./data.json")
             ${index < data.educations.length - 1 ? '<hr>' : ""}
         </div>
         `;
-        educationElement.innerHTML += educationHTML;
+            educationElement.innerHTML += educationHTML;
+        })
     })
-})
