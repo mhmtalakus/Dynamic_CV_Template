@@ -128,9 +128,9 @@ fetch("./data.json")
             educationHTML = `
         <div class="w3-container">
             <h5 class="w3-opacity"><b>${item.institution}</b></h5>
-            <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>${item.startDate} - ${item.endDate === "Currently" ? 
-                `<span class="w3-tag w3-teal w3-round">${item.endDate}</span>` : 
-                item.endDate}</h6>
+            <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>${item.startDate} - ${item.endDate === "Currently" ?
+                    `<span class="w3-tag w3-teal w3-round">${item.endDate}</span>` :
+                    item.endDate}</h6>
             <p>${item.degree}</p>
             ${index < data.educations.length - 1 ? '<hr>' : ""}
         </div>
@@ -138,3 +138,26 @@ fetch("./data.json")
             educationElement.innerHTML += educationHTML;
         })
     })
+
+const footerElement = document.getElementById("footer");
+console.log(footerElement);
+
+const footerTitle = document.createElement("p");
+footerTitle.textContent = "Find me on social media.";
+
+footerElement.appendChild(footerTitle);
+
+fetch("./data.json")
+.then(response => response.json())
+.then(data => {
+    let footerHTML = "";
+    data.social_accounts.forEach(item => {
+        footerHTML = `
+        <a href="${item.address}" target="_blank" style="text-decoration: none;">
+            <i class="${item.icon} w3-hover-opacity" style="font-size: 30px; margin: 0 10px;"></i>
+        </a>
+        `;
+        footerElement.innerHTML += footerHTML;
+    })
+})
+

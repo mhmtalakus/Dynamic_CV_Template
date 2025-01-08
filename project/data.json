@@ -77,12 +77,12 @@
     ],
     "social_accounts": [
         {
-            "platform": "Linkedin",
-            "icon": "fa fa-linkedin fa-lg"
+            "address": "https://www.linkedin.com/in/mehmet-alaku%C5%9F-a030a62b5/",
+            "icon": "fa fa-linkedin"
         },
         {
-            "platform" : "Github",
-            "icon" : "fa-brands fa-github fa-lg"
+            "address" : "https://github.com/mhmtalakus",
+            "icon" : "fa fa-github"
         }
     ]
 }
