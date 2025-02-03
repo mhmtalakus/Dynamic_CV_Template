@@ -2,7 +2,7 @@ const namesId = document.getElementById("name");
 
 // Image Creation
 const imageElement = document.createElement("img");
-imageElement.src = "../images/me.jpg";
+imageElement.src = "images/me.jpg";
 imageElement.style.width = "100%";
 imageElement.alt = "Avatar";
 namesId.appendChild(imageElement);
